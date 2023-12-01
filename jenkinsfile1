@@ -7,7 +7,7 @@ pipeline {
         stage('Git clone') {
             steps {
                 script {
-                    git 'https://github.com/Kenmakhanu/maven-web-app.git';
+                    git 'https://github.com/andreadote/maven-web-app.git';
                 }
             }
         }
@@ -31,7 +31,7 @@ pipeline {
             steps {
                 script{
                  def mavenPom = readMavenPom file:'pom.xml'
-                 def nexusRepoName = mavenPom.version.endsWith("SNAPSHOT") ? "Kens-repo-snapshot" : "kens-repo-release"
+                 def nexusRepoName = mavenPom.version.endsWith("SNAPSHOT") ? "Dres-repo-snapshot" : "Dres-repo-release"
                  nexusArtifactUploader artifacts: [
                     [
                         artifactId: 'maven-web-application', 
