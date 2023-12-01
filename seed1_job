@@ -2,7 +2,7 @@ job('Staging_job') {
    description('This is deployment to staging environment')
   
   scm {
-        github('Kenmakhanu/maven-web-app', 'master')
+        github('andreadote/maven-web-app', 'master')
    
     }
   

@@ -3,7 +3,7 @@ job('Staging_job') {
     description('This is deployment to the staging environment')
 
     scm {
-        github('Kenmakhanu/maven-web-app', 'master')
+        github('andreadote/maven-web-app', 'master')
     }
 
     logRotator {
